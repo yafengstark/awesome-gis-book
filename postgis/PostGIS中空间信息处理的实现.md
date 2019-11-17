@@ -1,7 +1,18 @@
 
 
+
+
+# PostGIS中空间信息处理的实现
+
 ## spatial_ref_sys表
+
 基于PostGIS模板创建的数据库的public模式下，有一个spatial_ref_sys表，它存放的是OGC规范的空间参考。
 srid存放的就是空间参考的Well-Known ID，对这个空间参考的定义主要包括两个字段，srtext存放的是以字符串描述的空间参考，proj4text存放的则是以字符串描述的PROJ.4 投影定义（PostGIS使用PROJ.4实现投影）。
 
 
+
+## geometry_columns表
+
+geometry_columns表存放了当前数据库中所有几何字段的信息，比如我当前的库里面有两个空间表，在geometry_columns表中就可以找到这两个空间表中几何字段的定义
+
+其中f_table_schema字段表示的是空间表所在的模式，f_table_name字段表示的是空间表的表名，f_geometry_column字段表示的是该空间表中几何字段的名称，srid字段表示的是该空间表的空间参考。

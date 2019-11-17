@@ -31,4 +31,4 @@ PostGIS在对象关系型数据库PostgreSQL上增加了存储管理空间数据
 
 ## 参考
 
-[PostGis - W3Cschool](https://www.w3cschool.cn/wqf_database/wqf_database-2sr626fm.html)
+PostGis - W3Cschool https://www.w3cschool.cn/wqf_database/wqf_database-2sr626fm.html

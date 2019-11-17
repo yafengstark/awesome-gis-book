@@ -6,14 +6,15 @@
 
 
 
-```
- `CREATE INDEX shape_index_cities`
- `ON sde.cities`
- `USING gist`
-`(shape);`
+```sql
+ CREATE INDEX shape_index_cities
+ ON sde.cities
+ USING gist
+(shape);
 
 ```
 
 
 
 1. 另外要注意的是，空间索引只有在进行基于边界范围的查询时才起作用，比如“&&”操作。
+

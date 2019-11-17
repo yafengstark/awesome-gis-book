@@ -15,6 +15,8 @@ docker run --name postgis -e POSTGRES_PASSWORD=12345666 -p 5432:5432 -d kartoza/
 
 
 
+默认用户名postgres
+
 
 
 
