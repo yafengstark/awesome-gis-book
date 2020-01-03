@@ -1,0 +1,1 @@
+[TopoJSON](https://link.jianshu.com/?t=https://github.com/mbostock/topojson/wiki) 开源地理信息JSON格式，大小要比GeoJSON小40%
